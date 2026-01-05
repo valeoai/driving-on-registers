@@ -1,0 +1,434 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.video {
+  flex: 1;
+  min-width: 600px; /* Adjust this value based on your needs */
+  margin: 10px;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 0;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+.eql-cntrb { 
+  font-size: smaller;
+}
+
+
+.title-centered {
+  white-space: nowrap;
+  overflow: hidden; /* Ensure no overflow if the title is too long */
+  text-overflow: ellipsis; /* Optionally, add ellipsis if the title is too long for the container */
+  display: inline-block; /* This keeps the title centered without wrapping */
+  max-width: 100%; /* Ensure it doesn't exceed the container width */
+}
+/* Optional: Adjust font size for smaller screens or narrow containers */
+.title.is-4 {
+  font-size: 1.2rem;  /* You can adjust this if needed */
+}
+
+/* Ensure the container stretches enough */
+.container.is-max-desktop {
+  width: 100%;        /* Allow the container to take full width */
+}
+
+/* Optional: To make sure columns don't cause wrapping */
+.columns {
+  width: 100%;        /* Ensure full-width container */
+  justify-content: center; /* Center columns */
+}
+
+/* Ensure the title doesn't wrap and is centered */
+.title-centered {
+  white-space: nowrap;  /* Prevent line breaks */
+  overflow: visible;     /* Ensure the full title is shown */
+  display: block;       /* Make it a block-level element for proper centering */
+  width: 100%;          /* Ensure the title takes full width of its container */
+  text-align: center;   /* Center the text */
+}
+
+/* Adjust the column to be more flexible */
+.column.is-four-fifths {
+  width: 100%;         /* Ensure the column takes the full width of the container */
+  display: flex;       /* Use flexbox layout */
+  justify-content: center; /* Center elements inside the column */
+  flex-wrap: wrap;     /* Allow content to wrap if necessary (flexbox will manage layout) */
+}
+
+.column.is-four-fifths-left {
+  width: 100%;         /* Ensure the column takes the full width of the container */
+  display: flex;       /* Use flexbox layout */
+  justify-content: left; /* Center elements inside the column */
+  flex-wrap: wrap;     /* Allow content to wrap if necessary (flexbox will manage layout) */
+}
+
+
+/* Ensure the container stretches enough */
+.container.is-max-desktop {
+  width: 100%;        /* Allow container to take full width */
+}
+
+/* Optional: Center the columns if needed */
+.columns {
+  width: 100%;
+  justify-content: center; /* Center columns inside the container */
+}
+
+.left-align {
+  text-align: left !important;
+}
+
+
+
+
+
+
+
+/* Container for the entire grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 10 equal-width columns */
+  grid-template-rows: repeat(10, auto); /* Allow rows to auto-size based on image height */
+  gap: 10px; /* Space between images */
+  justify-items: center; /* Center images horizontally within their grid cells */
+  align-items: center; /* Center images vertically within their grid cells */
+}
+
+/* Each image item inside the grid */
+.image-item {
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+}
+
+.image-item img {
+  max-width: 100%; /* Ensure image doesn't overflow horizontally */
+  max-height: 100%; /* Ensure image doesn't overflow vertically */
+  object-fit: contain; /* Maintain aspect ratio and fit the image within the cell */
+  border-radius: 8px; /* Optional: Add rounded corners to the images */
+}
+
+/* Optional styling for the section */
+.image-section {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+
+ /* Ensure that the image grid and columns are displayed correctly */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns */
+  grid-template-rows: auto repeat(10, auto); /* 1 row for column names and 10 rows for images */
+  gap: 10px; /* Space between images */
+  width: 100%; /* Ensure the grid uses the full width of its container */
+  align-items: center; /* Vertically center all items inside the grid */
+}
+
+/* Header Row for Column Names */
+.grid-header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns for headers */
+  gap: 10px;
+  font-weight: bold;
+  background-color: #f0f0f0; /* Optional: Background for the header */
+  padding: 10px 0;
+  text-align: center; /* Center the header items */
+}
+
+/* Each header item (name for columns) */
+.header-item {
+  font-size: 16px;
+  color: #333;
+  padding: 5px;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center;
+}
+
+
+/* Image Styling */
+.image-item img {
+  max-width: 100%; /* Ensure image doesn't overflow horizontally */
+  max-height: 100%; /* Ensure image doesn't overflow vertically */
+  object-fit: contain; /* Maintain aspect ratio and fit the image within the cell */
+  display: block; /* Ensure images behave as block-level elements */
+  margin: 0 auto; /* Center images horizontally within their grid cell */
+}
+/* Container for the image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns */
+  gap: 10px; /* Gap between grid items */
+  width: 100%; /* Ensure the grid uses full width of its container */
+}
+
+/* Header Row for Column Names */
+.grid-header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns for headers */
+  gap: 10px;
+  font-weight: bold;
+  background-color: #f0f0f0; /* Optional: Background color for headers */
+  padding: 10px 0;
+  text-align: center; /* Horizontally center text in each header item */
+}
+
+/* Each header item (name for columns) */
+.header-item {
+  font-size: 16px;
+  color: #333;
+  padding: 5px;
+  display: flex;
+  justify-content: center; /* Horizontally center the header */
+  align-items: center; /* Vertically center the header */
+  text-align: center;
+}
+
+
+
+/* Image Styling */
+.image-item img {
+  max-width: 100%; /* Ensure image doesn't overflow horizontally */
+  max-height: 100%; /* Ensure image doesn't overflow vertically */
+  object-fit: contain; /* Maintain aspect ratio */
+  display: block; /* Ensure images are block-level elements */
+  margin: 0 auto; /* Center images horizontally in their grid cells */
+}
+/* Container for the image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns */
+  gap: 10px; /* Gap between grid items */
+  width: 100%; /* Ensure the grid uses full width of its container */
+}
+
+/* Header Row for Column Names */
+.grid-header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns for headers */
+  gap: 10px;
+  font-weight: bold;
+  background-color: #f0f0f0; /* Optional: Background color for headers */
+  padding: 10px 0;
+  text-align: center; /* Horizontally center text in each header item */
+}
+
+/* Each header item (name for columns) */
+.header-item {
+  font-size: 16px;
+  color: #333;
+  padding: 5px;
+  display: flex;
+  justify-content: center; /* Horizontally center the header */
+  align-items: center; /* Vertically center the header */
+  text-align: center;
+}
+
+/* Image Grid Rows */
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Same as column setup */
+  gap: 10px;
+  justify-items: center; /* Center images horizontally in each grid cell */
+  align-items: center; /* Vertically center images in each grid cell */
+}
+
+/* Image Styling */
+.image-item img {
+  max-width: 100%; /* Ensure image doesn't overflow horizontally */
+  max-height: 100%; /* Ensure image doesn't overflow vertically */
+  object-fit: contain; /* Maintain aspect ratio */
+  display: block; /* Ensure images are block-level elements */
+  margin: 0 auto; /* Center images horizontally in their grid cells */
+}
+
+
+.image-cell img {
+  width: 100px; /* Adjust the image size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Ensuring the table is fully centered */
+.table {
+  margin: 0 auto;
+}
+
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create 5 equal-width columns */
+  grid-gap: 10px; /* Space between videos */
+}
+
+.video-item video {
+  width: 100%; /* Make the videos fill their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.video-item0 video {
+  width: 80%; /* Make the videos fill their container */
+  height: auto; /* Maintain aspect ratio */
+}
+#BibTeX pre {
+  display: flex;
+  align-items: center; /* Align content vertically (center the title and code block) */
+  gap: 20px; /* Space between the title and the code block */
+  background-color: #f7f7f7; /* Optional background for the code block */
+  padding: 20px; /* Optional padding */
+}
+
+#BibTeX .bibtex-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px; /* Optional gap between title and code block */
+  align-items: center; /* Center items vertically within the wrapper */
+}
+
+#BibTeX .title {
+  margin: 0; /* Remove default margin from title */
+  font-weight: bold; /* Optional styling */
+}
+
+#BibTeX code {
+  font-family: 'Courier New', monospace; /* Styling for the code block */
+  white-space: pre-wrap; /* Ensure that the text is wrapped */
+}
