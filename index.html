@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Driving on Registers: Simple and efficient transformer based end-to-end driving">
+  <meta property="og:title" content="Driving on Registers"/>
+  <meta property="og:description" content="Driving on Registers: Simple and efficient transformer based end-to-end driving"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <meta name="twitter:title" content="Driving on Registers">
+  <meta name="twitter:description" content="Simple and efficient transformer based end-to-end driving">
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="Autonomous Driving, Transformers, End-to-End Driving, Computer Vision">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Driving on Registers</title>
+  
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Driving on Registers</h1>
+          
+          <em><h1 style="font-size: 28px;">Simple and efficient transformer based end-to-end driving</h1></em>
+          <p>&nbsp;</p>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://ellingtonkirby.github.io/" target="_blank">Ellington Kirby</a>,</span>
+            <span class="author-block"><a href="" target="_blank">Alexandre Boulch</a>,</span>
+            <span class="author-block"><a href="" target="_blank">Yihong Xu</a>,</span>
+            <span class="author-block"><a href="" target="_blank">Yuan Yin</a>,</span>
+            <span class="author-block"><a href="" target="_blank">Gilles Puy</a>,</span>
+            <span class="author-block"><a href="" target="_blank">Eloi Zablocki</a>,</span>
+            <span class="author-block"><a href="" target="_blank">Andrei Bursuc</a>,</span>
+            <span class="author-block"><a href="" target="_blank">Spyros Gidaris</a>,</span>
+            <span class="author-block"><a href="https://imagine.enpc.fr/~marletr/" target="_blank">Renaud Marlet</a>,</span>
+            <span class="author-block"><a href="" target="_blank">Florent Bartoccioni</a>,</span>
+            <span class="author-block"><a href="" target="_blank">Anh-Quan Cao</a>,</span>
+            <span class="author-block"><a href="https://nerminsamet.github.io/" target="_blank">Nermin Samet</a></span>
+            <span class="author-block"><a href="" target="_blank">Tuan-Hung Vu</a>,</span>
+            <span class="author-block"><a href="" target="_blank">Matthieu Cord</a></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2601.05083" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://github.com/valeoai/DrivoR" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered">
+        
+        <h2 class="title is-4" style="color: black; margin-bottom: 2rem; max-width: 960px; margin-left: auto; margin-right: auto;">
+          DrivoR presents a simple transformer based architecture with no complex dependencies or costly BEV projections. Leveraging pre-trained ViT backbones, DrivoR compresses a four camera scene representation more than 250x, to just 64 total tokens.
+        </h2>
+        
+        <div class="item">
+          <img src="static/images/architecture.png" alt="Architecture Diagram" style="width: 100%; height: auto; margin-bottom: 1rem;"/>
+          
+          <div class="content has-text-justified" style="max-width: 960px; margin-left: auto; margin-right: auto;">
+            <p class="subtitle">
+              <small><small>The proposed architecture is composed of three transformer blocks: one encoder (perception) and two decoders (trajectory and scoring). The perception encoder compresses perceptual information in camera-aware registers for lightweight subsequent processing in the trajectory and scoring decoders.</small></small>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present DrivoR, a simple and efficient transformer-based architecture for end-to-end autonomous driving. Our approach builds on pretrained Vision Transformers (ViTs) and introduces camera-aware register tokens that compress multi-camera features into a compact scene representation, significantly reducing downstream computation without sacrificing accuracy. These tokens drive two lightweight transformer decoders that generate and then score candidate trajectories. The scoring decoder learns to mimic an oracle and predicts interpretable sub-scores representing aspects such as safety, comfort, and efficiency, enabling behavior-conditioned driving at inference. Despite its minimal design, DrivoR outperforms or matches strong contemporary baselines across NAVSIM-v1, NAVSIM-v2, and the photorealistic closed-loop HUGSIM benchmark. Our results show that a pure-transformer architecture, combined with targeted token compression, is sufficient for accurate, efficient, and adaptive end-to-end driving. Code and checkpoints will be made available.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered">
+        
+        <div class="content has-text-centered" style="margin-bottom: 30px;">
+          <p class="subtitle is-4">
+            DrivoR achieves state-of-the-art results on NAVSIM-v1, NAVSIM-v2, and HUGSIM benchmarks
+          </p>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="title is-4">NAVSIM-v1</h3>
+          <img src="static/images/navsimv1.png" alt="Navsim V1 Results" style="display: block; margin-left: auto; margin-right: auto; width: auto; height: 100%;" />
+        </div>
+          
+        <div>
+          <h3 class="title is-4">NAVSIM-v2</h3>
+          <img src="static/images/navsimv2.png" alt="Navsim V2 Results" style="width: 100%; height: auto; max-width: 1000px;" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="image-section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered">
+        
+        <div class="item mb-6"> 
+          <img src="static/images/register_specialization.png" alt="Register Specialization" style="width: 90%;"/>
+          <div class="content has-text-justified mt-3" style="max-width: 960px; margin-left: auto; margin-right: auto;">
+            <p class="subtitle">
+              <small><small><strong>Register Specialization:</strong> DrivoR compresses each camera to 16 scene tokens using DiNO registers. We visualize the inter-token cosine similarity for each camera. We see that as cameras become conceptually "less important", registers collapse to more similar representations, highlighting learned camera-specific compression. Cosine similarity is computed on navval validation set.</small></small>
+            </p>
+          </div>
+        </div>
+
+        <div class="item mb-6">
+          <img src="static/images/register_attention_maps.png" alt="Attention Maps" style="width: 90%;"/>
+          <div class="content has-text-justified mt-3" style="max-width: 960px; margin-left: auto; margin-right: auto;">
+            <p class="subtitle">
+              <small><small><strong>Attention Maps:</strong> Image patch to camera token cross attention layers, taken from the final cross attention layers. The front-camera tokens specialize to distinct regions (traffic light, lead vehicle, road edges), while back-camera tokens largely collapse to the same features, aside from a single distinct token, further highlighting camera specific compression.</small></small>
+            </p>
+          </div>
+        </div>
+
+        <div class="item mb-6">
+          <img src="static/images/disentangled_driving.png" alt="Disentangled Driving" style="width: 90%;"/>
+          <div class="content has-text-justified mt-3" style="max-width: 960px; margin-left: auto; margin-right: auto;">
+            <p class="subtitle">
+              <small><small><strong>Disentanglement:</strong> DrivoR disentangles trajectory and scoring by reprojecting decoded trajectories and adding a stop gradient. We see the importance of this disentanglement: using cross attention between trajectory queries and camera tokens, we see that different cameras are used between trajectory generation and scoring.</small></small>
+            </p>
+          </div>
+        </div>
+
+        <div class="item mb-6">
+          <img src="static/images/safety_oriented_agent.png" alt="Safety Oriented Agent" style="width: 90%;"/>
+          <div class="content has-text-justified mt-3" style="max-width: 960px; margin-left: auto; margin-right: auto;">
+            <p class="subtitle">
+              <small><small><strong>Behavior Tuning:</strong> Results of safety oriented fine tuning, where scoring coefficients are adjusted to vary the behavior of the driving policy. Dark blue was tuned on warmup-two-stage, light blue is our NAVSIM-v1 model. The result of our behavior tuning is an agent that drives more safely with fewer collisions, but less aggresively, with lower progress.</small></small>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered">
+
+        <h2 class="title is-3">Closed-Loop Driving</h2>
+        
+        <div class="content has-text-centered" style="margin-bottom: 30px;">
+          <p class="subtitle is-5">
+            Zero shot generalization of the DrivoR model to closed loop driving in the photorealistic HUGSIM simulator.
+          </p>
+        </div>
+
+       <div class="container mb-6">
+          <div class="content has-text-centered" style="margin-bottom: 10px;">
+          <p class="subtitle is-6">
+          Nuscenes split
+          </p>
+          </div>  
+          <video id="hugsim-video-1" autoplay controls muted loop playsinline style="width: 100%; max-width: 900px; display: block; margin: 0 auto;">
+            <source src="static/videos/hugsim_video_1.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="container mb-6">
+          <div class="content has-text-centered" style="margin-bottom: 10px;">
+          <p class="subtitle is-6">
+          Waymo split
+          </p>
+          </div>  
+          <video id="hugsim-video-2" controls muted loop playsinline style="width: 100%; max-width: 900px; display: block; margin: 0 auto;">
+            <source src="static/videos/hugsim_video_2.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="container mb-6">
+          <div class="content has-text-centered" style="margin-bottom: 10px;">
+          <p class="subtitle is-6">
+          Pandaset split
+          </p>
+          </div>  
+          <video id="hugsim-video-3" controls muted loop playsinline style="width: 100%; max-width: 900px; display: block; margin: 0 auto;">
+            <source src="static/videos/hugsim_video_3.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="container mb-6">
+          <div class="content has-text-centered" style="margin-bottom: 10px;">
+          <p class="subtitle is-6">
+          KITTI-360 split
+          </p>
+          </div>  
+          <video id="hugsim-video-4" controls muted loop playsinline style="width: 100%; max-width: 900px; display: block; margin: 0 auto;">
+            <source src="static/videos/hugsim_video_4.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    <div class="content has-text-justified">
+      <p>We thank Loick Chambon for constant support throughout the project and Lan Feng for helpful discussions. This work was granted access to the HPC resources of IDRIS under the allocations AD011016241 and AD011016239R1 made by GENCI. We acknowledge EuroHPC Joint Undertaking for awarding the project ID EHPC-REG-2024R02-210 access to Karolina, Czech Republic. Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Commission. Neither the European Union nor the European Commission can be held responsible for them. This work was supported by the European Union’s Horizon Europe research and innovation programme under grant agreement No 101214398 (ELLIOT).</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <div class="bibtex-wrapper">
+      <h2 class="title">BibTeX</h2>
+      <pre><code></code></pre>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            <small><small>This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.</small></small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
